@@ -1,0 +1,92 @@
+[
+  {
+    "endpoint": "POST /customer/signup",
+    "matched_function": "",
+    "similarity_score": 0.595
+  },
+  {
+    "endpoint": "POST /customer/login",
+    "matched_function": "",
+    "similarity_score": 0.525
+  },
+  {
+    "endpoint": "POST /customer/address",
+    "matched_function": "",
+    "similarity_score": 0.446
+  },
+  {
+    "endpoint": "GET /customer/profile",
+    "matched_function": "",
+    "similarity_score": 0.699
+  },
+  {
+    "endpoint": "GET /customer/shoping-details",
+    "matched_function": "",
+    "similarity_score": 0.503
+  },
+  {
+    "endpoint": "GET /customer/wishlist",
+    "matched_function": "",
+    "similarity_score": 0.755
+  },
+  {
+    "endpoint": "POST /product/create",
+    "matched_function": "CreateProduct",
+    "similarity_score": 0.525
+  },
+  {
+    "endpoint": "GET /category/:type",
+    "matched_function": "",
+    "similarity_score": 0.444
+  },
+  {
+    "endpoint": "GET /:id",
+    "matched_function": "",
+    "similarity_score": 0.287
+  },
+  {
+    "endpoint": "POST /ids",
+    "matched_function": "",
+    "similarity_score": 0.217
+  },
+  {
+    "endpoint": "PUT /wishlist",
+    "matched_function": "",
+    "similarity_score": 0.675
+  },
+  {
+    "endpoint": "DELETE /wishlist/:id",
+    "matched_function": "",
+    "similarity_score": 0.796
+  },
+  {
+    "endpoint": "PUT /cart",
+    "matched_function": "",
+    "similarity_score": 0.434
+  },
+  {
+    "endpoint": "DELETE /cart/:id",
+    "matched_function": "",
+    "similarity_score": 0.651
+  },
+  {
+    "endpoint": "GET /",
+    "matched_function": "GetProducts",
+    "similarity_score": 0.259
+  },
+  {
+    "endpoint": "POST /shopping/order",
+    "matched_function": "",
+    "similarity_score": 0.401
+  },
+  {
+    "endpoint": "GET /shopping/orders",
+    "matched_function": "",
+    "similarity_score": 0.598
+  },
+  {
+    "endpoint": "GET /shopping/cart",
+    "matched_function": "",
+    "similarity_score": 0.561
+  }
+]

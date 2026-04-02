@@ -1,0 +1,220 @@
+[
+  {
+    "type": "function",
+    "function_fqn": "CreateProduct",
+    "intent": "Create",
+    "domain_entity": "Createproduct",
+    "business_role": "Createproduct Creation Service"
+  },
+  {
+    "type": "function",
+    "function_fqn": "GetProductDescription",
+    "intent": "Read",
+    "domain_entity": "Getproductdescription",
+    "business_role": "Getproductdescription Query Service"
+  },
+  {
+    "type": "function",
+    "function_fqn": "GetProducts",
+    "intent": "Read",
+    "domain_entity": "Getproducts",
+    "business_role": "Getproducts Query Service"
+  },
+  {
+    "type": "function",
+    "function_fqn": "GetProductsByCategory",
+    "intent": "Read",
+    "domain_entity": "Getproductsbycategory",
+    "business_role": "Getproductsbycategory Query Service"
+  },
+  {
+    "type": "function",
+    "function_fqn": "GetSelectedProducts",
+    "intent": "Read",
+    "domain_entity": "Getselectedproducts",
+    "business_role": "Getselectedproducts Query Service"
+  },
+  {
+    "type": "function",
+    "function_fqn": "SignIn",
+    "intent": "Process",
+    "domain_entity": "Signin",
+    "business_role": "Signin Processing Service"
+  },
+  {
+    "type": "function",
+    "function_fqn": "SignUp",
+    "intent": "Process",
+    "domain_entity": "Signup",
+    "business_role": "Signup Processing Service"
+  },
+  {
+    "type": "function",
+    "function_fqn": "UnknownFunction",
+    "intent": "Process",
+    "domain_entity": "Unknownfunction",
+    "business_role": "Unknownfunction Processing Service"
+  },
+  {
+    "type": "api",
+    "api_endpoint": "/customer/signup",
+    "http_method": "POST",
+    "intent": "Create",
+    "domain_entity": "Signup",
+    "business_role": "Signup Creation Service",
+    "source_file": "api/customer.js"
+  },
+  {
+    "type": "api",
+    "api_endpoint": "/customer/login",
+    "http_method": "POST",
+    "intent": "Create",
+    "domain_entity": "Login",
+    "business_role": "Login Creation Service",
+    "source_file": "api/customer.js"
+  },
+  {
+    "type": "api",
+    "api_endpoint": "/customer/address",
+    "http_method": "POST",
+    "intent": "Create",
+    "domain_entity": "Address",
+    "business_role": "Address Creation Service",
+    "source_file": "api/customer.js"
+  },
+  {
+    "type": "api",
+    "api_endpoint": "/customer/profile",
+    "http_method": "GET",
+    "intent": "Read",
+    "domain_entity": "Profile",
+    "business_role": "Profile Query Service",
+    "source_file": "api/customer.js"
+  },
+  {
+    "type": "api",
+    "api_endpoint": "/customer/shoping-details",
+    "http_method": "GET",
+    "intent": "Read",
+    "domain_entity": "Details",
+    "business_role": "Details Query Service",
+    "source_file": "api/customer.js"
+  },
+  {
+    "type": "api",
+    "api_endpoint": "/customer/wishlist",
+    "http_method": "GET",
+    "intent": "Read",
+    "domain_entity": "Wishlist",
+    "business_role": "Wishlist Query Service",
+    "source_file": "api/customer.js"
+  },
+  {
+    "type": "api",
+    "api_endpoint": "/product/create",
+    "http_method": "POST",
+    "intent": "Create",
+    "domain_entity": "Create",
+    "business_role": "Create Creation Service",
+    "source_file": "api/products.js"
+  },
+  {
+    "type": "api",
+    "api_endpoint": "/category/:type",
+    "http_method": "GET",
+    "intent": "Read",
+    "domain_entity": ":type",
+    "business_role": ":type Query Service",
+    "source_file": "api/products.js"
+  },
+  {
+    "type": "api",
+    "api_endpoint": "/:id",
+    "http_method": "GET",
+    "intent": "Read",
+    "domain_entity": "General",
+    "business_role": "General Query Service",
+    "source_file": "api/products.js"
+  },
+  {
+    "type": "api",
+    "api_endpoint": "/ids",
+    "http_method": "POST",
+    "intent": "Create",
+    "domain_entity": "General",
+    "business_role": "General Creation Service",
+    "source_file": "api/products.js"
+  },
+  {
+    "type": "api",
+    "api_endpoint": "/wishlist",
+    "http_method": "PUT",
+    "intent": "Update",
+    "domain_entity": "Wishlist",
+    "business_role": "Wishlist Update Service",
+    "source_file": "api/products.js"
+  },
+  {
+    "type": "api",
+    "api_endpoint": "/wishlist/:id",
+    "http_method": "DELETE",
+    "intent": "Delete",
+    "domain_entity": "Wishlist",
+    "business_role": "Wishlist Deletion Service",
+    "source_file": "api/products.js"
+  },
+  {
+    "type": "api",
+    "api_endpoint": "/cart",
+    "http_method": "PUT",
+    "intent": "Update",
+    "domain_entity": "Cart",
+    "business_role": "Cart Update Service",
+    "source_file": "api/products.js"
+  },
+  {
+    "type": "api",
+    "api_endpoint": "/cart/:id",
+    "http_method": "DELETE",
+    "intent": "Delete",
+    "domain_entity": "Cart",
+    "business_role": "Cart Deletion Service",
+    "source_file": "api/products.js"
+  },
+  {
+    "type": "api",
+    "api_endpoint": "/",
+    "http_method": "GET",
+    "intent": "Read",
+    "domain_entity": "General",
+    "business_role": "General Query Service",
+    "source_file": "api/products.js"
+  },
+  {
+    "type": "api",
+    "api_endpoint": "/shopping/order",
+    "http_method": "POST",
+    "intent": "Create",
+    "domain_entity": "Order",
+    "business_role": "Order Creation Service",
+    "source_file": "api/shopping.js"
+  },
+  {
+    "type": "api",
+    "api_endpoint": "/shopping/orders",
+    "http_method": "GET",
+    "intent": "Read",
+    "domain_entity": "Orders",
+    "business_role": "Orders Query Service",
+    "source_file": "api/shopping.js"
+  },
+  {
+    "type": "api",
+    "api_endpoint": "/shopping/cart",
+    "http_method": "GET",
+    "intent": "Read",
+    "domain_entity": "Cart",
+    "business_role": "Cart Query Service",
+    "source_file": "api/shopping.js"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "function": "CreateProduct",
+    "cluster_id": "UnassignedService",
+    "business_role": "Unassigned"
+  },
+  {
+    "function": "GetProductDescription",
+    "cluster_id": "UnassignedService",
+    "business_role": "Unassigned"
+  },
+  {
+    "function": "GetProducts",
+    "cluster_id": "UnassignedService",
+    "business_role": "Unassigned"
+  },
+  {
+    "function": "GetProductsByCategory",
+    "cluster_id": "UnassignedService",
+    "business_role": "Unassigned"
+  },
+  {
+    "function": "GetSelectedProducts",
+    "cluster_id": "UnassignedService",
+    "business_role": "Unassigned"
+  },
+  {
+    "function": "SignIn",
+    "cluster_id": "UnassignedService",
+    "business_role": "Unassigned"
+  },
+  {
+    "function": "SignUp",
+    "cluster_id": "UnassignedService",
+    "business_role": "Unassigned"
+  },
+  {
+    "function": "UnknownFunction",
+    "cluster_id": "UnassignedService",
+    "business_role": "Unassigned"
+  }
+]

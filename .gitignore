@@ -1,0 +1,16 @@
+# Node.js dependencies
+node_modules/
+
+# Python virtual environment
+.venv/
+
+# ML / cache folders
+src/hf_cache/
+# *.bin
+# *.json
+# Optional (recommended)
+# .env
+# __pycache__/
+# *.pyc
+# dist/
+# build/

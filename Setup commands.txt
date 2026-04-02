@@ -1,0 +1,74 @@
+1. For Windows,
+In package.json
+
+npm install cross-env --save-dev 
+or
+"devDependencies": {
+    "cross-env": "^10.0.0",
+    "nodemon": "^2.0.12"
+  }
+
+ "dev": "cross-env NODE_ENV=dev nodemon src/index.js",
+ "start": "cross-env NODE_ENV=prod node src/index.js"
+
+https://chatgpt.com/share/692fd944-4448-8003-a4e2-6be497933ab0
+
+2. npm install tree-sitter tree-sitter-javascript
+
+3. Create a file run-parser.js in the project root or src
+   How this works?
+   readAllFiles() recursively finds .js/.jsx/.ts/.tsx files under        src/.
+
+   For each file, we parser.parse(src) to get a Tree.
+
+Result is saved to api-sementics.json in your project root.
+Annotations = Semantic Labels extracted from code automatically
+
+4. Install CodeT5+
+   npm install @xenova/transformers
+
+5. Create a file sementic-analyzer.mjs
+
+Tree-Sitter Parser → JSON (structural info) → CodeT5+ → semantic-extraction.json
+
+6. Ontology File named as build-ontology.py
+
+Requirements: 
+python version 3.8+
+python -m pip install rdflib
+
+To run the file:
+python build_ontology.py
+
+Install Protégé to view the owl/ttl extracted files.
+
+7. Graph Based Sementic Extraction
+Create file named as:
+i. static-graph.py based on api-sementics.json
+ii. sementic-graph.py based on sementic-extraction.json
+
+Install: pip install networkx rdflib matplotlib
+
+Run: 
+python semantic-graph.py
+python static-graph.py
+
+Phase 3
+
+1. Install python dependencies: 
+   pip install transformers torch sentencepiece accelerate
+   pip install sentence-transformers
+
+2. To update the python dependencies:
+   python.exe -m pip install --upgrade pip
+
+After Uploading on git hf_cache folder will not be visible 
+hf_cache : Models will be downloaded automatically on first run.
+
+
+ 
+
+
+
+
+

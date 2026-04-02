@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:base="http://example.org/monolith#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/monolith#fn_UnknownFunction_13">
+    <rdf:type rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:label>UnknownFunction</rdfs:label>
+    <base:relatesTo rdf:resource="http://example.org/monolith#Cart"/>
+    <base:businessRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:businessRole>
+    <base:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:intent>
+    <base:httpMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DELETE</base:httpMethod>
+    <base:route rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/cart/:id</base:route>
+    <base:sourceFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">src\api\products.js</base:sourceFile>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#fn_CreateProduct_6">
+    <rdf:type rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:label>CreateProduct</rdfs:label>
+    <base:relatesTo rdf:resource="http://example.org/monolith#Product"/>
+    <base:businessRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Create</base:businessRole>
+    <base:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Create</base:intent>
+    <base:httpMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POST</base:httpMethod>
+    <base:route rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/product/create</base:route>
+    <base:sourceFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">src\api\products.js</base:sourceFile>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#httpMethod">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>httpMethod</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#fn_UnknownFunction_15">
+    <rdf:type rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:label>UnknownFunction</rdfs:label>
+    <base:relatesTo rdf:resource="http://example.org/monolith#Order"/>
+    <base:businessRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:businessRole>
+    <base:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:intent>
+    <base:httpMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POST</base:httpMethod>
+    <base:route rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/shopping/order</base:route>
+    <base:sourceFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">src\api\shopping.js</base:sourceFile>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#Product">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Product</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#intent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>intent</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#businessRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>businessRole</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#fn_SignIn_1">
+    <rdf:type rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:label>SignIn</rdfs:label>
+    <base:relatesTo rdf:resource="http://example.org/monolith#Customer"/>
+    <base:businessRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:businessRole>
+    <base:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:intent>
+    <base:httpMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POST</base:httpMethod>
+    <base:route rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/customer/login</base:route>
+    <base:sourceFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">src\api\customer.js</base:sourceFile>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#fn_UnknownFunction_3">
+    <rdf:type rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:label>UnknownFunction</rdfs:label>
+    <base:relatesTo rdf:resource="http://example.org/monolith#Customer"/>
+    <base:businessRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:businessRole>
+    <base:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:intent>
+    <base:httpMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GET</base:httpMethod>
+    <base:route rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/customer/profile</base:route>
+    <base:sourceFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">src\api\customer.js</base:sourceFile>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#fn_GetProductDescription_8">
+    <rdf:type rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:label>GetProductDescription</rdfs:label>
+    <base:relatesTo rdf:resource="http://example.org/monolith#GenericEntity"/>
+    <base:businessRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fetch</base:businessRole>
+    <base:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fetch</base:intent>
+    <base:httpMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GET</base:httpMethod>
+    <base:route rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/:id</base:route>
+    <base:sourceFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">src\api\products.js</base:sourceFile>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#fn_UnknownFunction_4">
+    <rdf:type rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:label>UnknownFunction</rdfs:label>
+    <base:relatesTo rdf:resource="http://example.org/monolith#Customer"/>
+    <base:businessRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:businessRole>
+    <base:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:intent>
+    <base:httpMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GET</base:httpMethod>
+    <base:route rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/customer/shoping-details</base:route>
+    <base:sourceFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">src\api\customer.js</base:sourceFile>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#fn_UnknownFunction_11">
+    <rdf:type rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:label>UnknownFunction</rdfs:label>
+    <base:relatesTo rdf:resource="http://example.org/monolith#Wishlist"/>
+    <base:businessRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:businessRole>
+    <base:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:intent>
+    <base:httpMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DELETE</base:httpMethod>
+    <base:route rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/wishlist/:id</base:route>
+    <base:sourceFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">src\api\products.js</base:sourceFile>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#route">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>route</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#fn_UnknownFunction_10">
+    <rdf:type rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:label>UnknownFunction</rdfs:label>
+    <base:relatesTo rdf:resource="http://example.org/monolith#Wishlist"/>
+    <base:businessRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:businessRole>
+    <base:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:intent>
+    <base:httpMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PUT</base:httpMethod>
+    <base:route rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/wishlist</base:route>
+    <base:sourceFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">src\api\products.js</base:sourceFile>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#fn_UnknownFunction_12">
+    <rdf:type rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:label>UnknownFunction</rdfs:label>
+    <base:relatesTo rdf:resource="http://example.org/monolith#Cart"/>
+    <base:businessRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:businessRole>
+    <base:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:intent>
+    <base:httpMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PUT</base:httpMethod>
+    <base:route rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/cart</base:route>
+    <base:sourceFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">src\api\products.js</base:sourceFile>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#fn_GetProductsByCategory_7">
+    <rdf:type rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:label>GetProductsByCategory</rdfs:label>
+    <base:relatesTo rdf:resource="http://example.org/monolith#GenericEntity"/>
+    <base:businessRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fetch</base:businessRole>
+    <base:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fetch</base:intent>
+    <base:httpMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GET</base:httpMethod>
+    <base:route rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/category/:type</base:route>
+    <base:sourceFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">src\api\products.js</base:sourceFile>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#Function">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Function</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#fn_UnknownFunction_5">
+    <rdf:type rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:label>UnknownFunction</rdfs:label>
+    <base:relatesTo rdf:resource="http://example.org/monolith#Customer"/>
+    <base:businessRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:businessRole>
+    <base:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:intent>
+    <base:httpMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GET</base:httpMethod>
+    <base:route rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/customer/wishlist</base:route>
+    <base:sourceFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">src\api\customer.js</base:sourceFile>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#relatesTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>relatesTo</rdfs:label>
+    <rdfs:domain rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#fn_UnknownFunction_16">
+    <rdf:type rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:label>UnknownFunction</rdfs:label>
+    <base:relatesTo rdf:resource="http://example.org/monolith#Order"/>
+    <base:businessRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:businessRole>
+    <base:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:intent>
+    <base:httpMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GET</base:httpMethod>
+    <base:route rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/shopping/orders</base:route>
+    <base:sourceFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">src\api\shopping.js</base:sourceFile>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#fn_GetSelectedProducts_9">
+    <rdf:type rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:label>GetSelectedProducts</rdfs:label>
+    <base:relatesTo rdf:resource="http://example.org/monolith#GenericEntity"/>
+    <base:businessRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fetch</base:businessRole>
+    <base:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fetch</base:intent>
+    <base:httpMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POST</base:httpMethod>
+    <base:route rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/ids</base:route>
+    <base:sourceFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">src\api\products.js</base:sourceFile>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#GenericEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>GenericEntity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#Customer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Customer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#fn_UnknownFunction_2">
+    <rdf:type rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:label>UnknownFunction</rdfs:label>
+    <base:relatesTo rdf:resource="http://example.org/monolith#Customer"/>
+    <base:businessRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:businessRole>
+    <base:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:intent>
+    <base:httpMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POST</base:httpMethod>
+    <base:route rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/customer/address</base:route>
+    <base:sourceFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">src\api\customer.js</base:sourceFile>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#fn_SignUp_0">
+    <rdf:type rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:label>SignUp</rdfs:label>
+    <base:relatesTo rdf:resource="http://example.org/monolith#Customer"/>
+    <base:businessRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Create Account</base:businessRole>
+    <base:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Create Account</base:intent>
+    <base:httpMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POST</base:httpMethod>
+    <base:route rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/customer/signup</base:route>
+    <base:sourceFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">src\api\customer.js</base:sourceFile>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#Order">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Order</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#Cart">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Cart</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#Wishlist">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Wishlist</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#fn_UnknownFunction_17">
+    <rdf:type rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:label>UnknownFunction</rdfs:label>
+    <base:relatesTo rdf:resource="http://example.org/monolith#Cart"/>
+    <base:businessRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:businessRole>
+    <base:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</base:intent>
+    <base:httpMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GET</base:httpMethod>
+    <base:route rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/shopping/cart</base:route>
+    <base:sourceFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">src\api\shopping.js</base:sourceFile>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#fn_GetProducts_14">
+    <rdf:type rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:label>GetProducts</rdfs:label>
+    <base:relatesTo rdf:resource="http://example.org/monolith#GenericEntity"/>
+    <base:businessRole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fetch</base:businessRole>
+    <base:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fetch</base:intent>
+    <base:httpMethod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GET</base:httpMethod>
+    <base:route rdf:datatype="http://www.w3.org/2001/XMLSchema#string">/</base:route>
+    <base:sourceFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">src\api\products.js</base:sourceFile>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/monolith#sourceFile">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/monolith#Function"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>sourceFile</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

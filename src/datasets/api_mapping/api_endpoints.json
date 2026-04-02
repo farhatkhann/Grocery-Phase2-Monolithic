@@ -1,0 +1,92 @@
+[
+  {
+    "endpoint": "/customer/signup",
+    "method": "POST",
+    "source_file": "api/customer.js"
+  },
+  {
+    "endpoint": "/customer/login",
+    "method": "POST",
+    "source_file": "api/customer.js"
+  },
+  {
+    "endpoint": "/customer/address",
+    "method": "POST",
+    "source_file": "api/customer.js"
+  },
+  {
+    "endpoint": "/customer/profile",
+    "method": "GET",
+    "source_file": "api/customer.js"
+  },
+  {
+    "endpoint": "/customer/shoping-details",
+    "method": "GET",
+    "source_file": "api/customer.js"
+  },
+  {
+    "endpoint": "/customer/wishlist",
+    "method": "GET",
+    "source_file": "api/customer.js"
+  },
+  {
+    "endpoint": "/product/create",
+    "method": "POST",
+    "source_file": "api/products.js"
+  },
+  {
+    "endpoint": "/category/:type",
+    "method": "GET",
+    "source_file": "api/products.js"
+  },
+  {
+    "endpoint": "/:id",
+    "method": "GET",
+    "source_file": "api/products.js"
+  },
+  {
+    "endpoint": "/ids",
+    "method": "POST",
+    "source_file": "api/products.js"
+  },
+  {
+    "endpoint": "/wishlist",
+    "method": "PUT",
+    "source_file": "api/products.js"
+  },
+  {
+    "endpoint": "/wishlist/:id",
+    "method": "DELETE",
+    "source_file": "api/products.js"
+  },
+  {
+    "endpoint": "/cart",
+    "method": "PUT",
+    "source_file": "api/products.js"
+  },
+  {
+    "endpoint": "/cart/:id",
+    "method": "DELETE",
+    "source_file": "api/products.js"
+  },
+  {
+    "endpoint": "/",
+    "method": "GET",
+    "source_file": "api/products.js"
+  },
+  {
+    "endpoint": "/shopping/order",
+    "method": "POST",
+    "source_file": "api/shopping.js"
+  },
+  {
+    "endpoint": "/shopping/orders",
+    "method": "GET",
+    "source_file": "api/shopping.js"
+  },
+  {
+    "endpoint": "/shopping/cart",
+    "method": "GET",
+    "source_file": "api/shopping.js"
+  }
+]
