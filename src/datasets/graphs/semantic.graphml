@@ -6,167 +6,254 @@
   <key id="d1" for="node" attr.name="node_type" attr.type="string" />
   <key id="d0" for="graph" attr.name="name" attr.type="string" />
   <graph edgedefault="directed">
-    <node id="FUNC::UnknownFunction">
+    <node id="FUNC::SignUp">
       <data key="d1">Function</data>
-      <data key="d2">UnknownFunction</data>
-      <data key="d3">Unknown</data>
+      <data key="d2">SignUp</data>
+      <data key="d3">Create</data>
     </node>
-    <node id="ENTITY::UnknownEntity">
+    <node id="ENTITY::Customer">
       <data key="d1">DomainEntity</data>
-      <data key="d2">UnknownEntity</data>
+      <data key="d2">Customer</data>
     </node>
-    <node id="ROLE::UnknownRole">
+    <node id="ROLE::Create">
       <data key="d1">BusinessRole</data>
-      <data key="d2">UnknownRole</data>
+      <data key="d2">Create</data>
     </node>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="0">
+    <node id="FUNC::SignIn">
+      <data key="d1">Function</data>
+      <data key="d2">SignIn</data>
+      <data key="d3">Authenticate</data>
+    </node>
+    <node id="ROLE::Authenticate">
+      <data key="d1">BusinessRole</data>
+      <data key="d2">Authenticate</data>
+    </node>
+    <node id="FUNC::POSTCustomerAddress">
+      <data key="d1">Function</data>
+      <data key="d2">POSTCustomerAddress</data>
+      <data key="d3">Create</data>
+    </node>
+    <node id="FUNC::GETCustomerProfile">
+      <data key="d1">Function</data>
+      <data key="d2">GETCustomerProfile</data>
+      <data key="d3">Read</data>
+    </node>
+    <node id="ROLE::Read">
+      <data key="d1">BusinessRole</data>
+      <data key="d2">Read</data>
+    </node>
+    <node id="FUNC::GETCustomerShoppingdetails">
+      <data key="d1">Function</data>
+      <data key="d2">GETCustomerShoppingdetails</data>
+      <data key="d3">Read</data>
+    </node>
+    <node id="FUNC::GETCustomerWishlist">
+      <data key="d1">Function</data>
+      <data key="d2">GETCustomerWishlist</data>
+      <data key="d3">Read</data>
+    </node>
+    <node id="FUNC::CreateProduct">
+      <data key="d1">Function</data>
+      <data key="d2">CreateProduct</data>
+      <data key="d3">Create</data>
+    </node>
+    <node id="ENTITY::Product">
+      <data key="d1">DomainEntity</data>
+      <data key="d2">Product</data>
+    </node>
+    <node id="FUNC::GetProductsByCategory">
+      <data key="d1">Function</data>
+      <data key="d2">GetProductsByCategory</data>
+      <data key="d3">Read</data>
+    </node>
+    <node id="ENTITY::Category">
+      <data key="d1">DomainEntity</data>
+      <data key="d2">Category</data>
+    </node>
+    <node id="FUNC::GetProductDescription">
+      <data key="d1">Function</data>
+      <data key="d2">GetProductDescription</data>
+      <data key="d3">Read</data>
+    </node>
+    <node id="ENTITY::Common">
+      <data key="d1">DomainEntity</data>
+      <data key="d2">Common</data>
+    </node>
+    <node id="FUNC::GetSelectedProducts">
+      <data key="d1">Function</data>
+      <data key="d2">GetSelectedProducts</data>
+      <data key="d3">Create</data>
+    </node>
+    <node id="ENTITY::Ids">
+      <data key="d1">DomainEntity</data>
+      <data key="d2">Ids</data>
+    </node>
+    <node id="FUNC::PUTWishlist">
+      <data key="d1">Function</data>
+      <data key="d2">PUTWishlist</data>
+      <data key="d3">Update</data>
+    </node>
+    <node id="ENTITY::Wishlist">
+      <data key="d1">DomainEntity</data>
+      <data key="d2">Wishlist</data>
+    </node>
+    <node id="ROLE::Update">
+      <data key="d1">BusinessRole</data>
+      <data key="d2">Update</data>
+    </node>
+    <node id="FUNC::DELETEWishlistId">
+      <data key="d1">Function</data>
+      <data key="d2">DELETEWishlistId</data>
+      <data key="d3">Delete</data>
+    </node>
+    <node id="ROLE::Delete">
+      <data key="d1">BusinessRole</data>
+      <data key="d2">Delete</data>
+    </node>
+    <node id="FUNC::PUTCart">
+      <data key="d1">Function</data>
+      <data key="d2">PUTCart</data>
+      <data key="d3">Update</data>
+    </node>
+    <node id="ENTITY::Cart">
+      <data key="d1">DomainEntity</data>
+      <data key="d2">Cart</data>
+    </node>
+    <node id="FUNC::DELETECartId">
+      <data key="d1">Function</data>
+      <data key="d2">DELETECartId</data>
+      <data key="d3">Delete</data>
+    </node>
+    <node id="FUNC::GetProducts">
+      <data key="d1">Function</data>
+      <data key="d2">GetProducts</data>
+      <data key="d3">Read</data>
+    </node>
+    <node id="FUNC::POSTShoppingOrder">
+      <data key="d1">Function</data>
+      <data key="d2">POSTShoppingOrder</data>
+      <data key="d3">Create</data>
+    </node>
+    <node id="ENTITY::Order">
+      <data key="d1">DomainEntity</data>
+      <data key="d2">Order</data>
+    </node>
+    <node id="FUNC::GETShoppingOrders">
+      <data key="d1">Function</data>
+      <data key="d2">GETShoppingOrders</data>
+      <data key="d3">Read</data>
+    </node>
+    <node id="FUNC::GETShoppingCart">
+      <data key="d1">Function</data>
+      <data key="d2">GETShoppingCart</data>
+      <data key="d3">Read</data>
+    </node>
+    <edge source="FUNC::SignUp" target="ENTITY::Customer" id="0">
       <data key="d4">OPERATES_ON</data>
     </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="1">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="2">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="3">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="4">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="5">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="6">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="7">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="8">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="9">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="10">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="11">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="12">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="13">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="14">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="15">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="16">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="17">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="18">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="19">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="20">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="21">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="22">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="23">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ENTITY::UnknownEntity" id="24">
-      <data key="d4">OPERATES_ON</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="0">
+    <edge source="FUNC::SignUp" target="ROLE::Create" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="1">
+    <edge source="FUNC::SignIn" target="ENTITY::Customer" id="0">
+      <data key="d4">OPERATES_ON</data>
+    </edge>
+    <edge source="FUNC::SignIn" target="ROLE::Authenticate" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="2">
+    <edge source="FUNC::POSTCustomerAddress" target="ENTITY::Customer" id="0">
+      <data key="d4">OPERATES_ON</data>
+    </edge>
+    <edge source="FUNC::POSTCustomerAddress" target="ROLE::Create" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="3">
+    <edge source="FUNC::GETCustomerProfile" target="ENTITY::Customer" id="0">
+      <data key="d4">OPERATES_ON</data>
+    </edge>
+    <edge source="FUNC::GETCustomerProfile" target="ROLE::Read" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="4">
+    <edge source="FUNC::GETCustomerShoppingdetails" target="ENTITY::Customer" id="0">
+      <data key="d4">OPERATES_ON</data>
+    </edge>
+    <edge source="FUNC::GETCustomerShoppingdetails" target="ROLE::Read" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="5">
+    <edge source="FUNC::GETCustomerWishlist" target="ENTITY::Customer" id="0">
+      <data key="d4">OPERATES_ON</data>
+    </edge>
+    <edge source="FUNC::GETCustomerWishlist" target="ROLE::Read" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="6">
+    <edge source="FUNC::CreateProduct" target="ENTITY::Product" id="0">
+      <data key="d4">OPERATES_ON</data>
+    </edge>
+    <edge source="FUNC::CreateProduct" target="ROLE::Create" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="7">
+    <edge source="FUNC::GetProductsByCategory" target="ENTITY::Category" id="0">
+      <data key="d4">OPERATES_ON</data>
+    </edge>
+    <edge source="FUNC::GetProductsByCategory" target="ROLE::Read" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="8">
+    <edge source="FUNC::GetProductDescription" target="ENTITY::Common" id="0">
+      <data key="d4">OPERATES_ON</data>
+    </edge>
+    <edge source="FUNC::GetProductDescription" target="ROLE::Read" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="9">
+    <edge source="FUNC::GetSelectedProducts" target="ENTITY::Ids" id="0">
+      <data key="d4">OPERATES_ON</data>
+    </edge>
+    <edge source="FUNC::GetSelectedProducts" target="ROLE::Create" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="10">
+    <edge source="FUNC::PUTWishlist" target="ENTITY::Wishlist" id="0">
+      <data key="d4">OPERATES_ON</data>
+    </edge>
+    <edge source="FUNC::PUTWishlist" target="ROLE::Update" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="11">
+    <edge source="FUNC::DELETEWishlistId" target="ENTITY::Wishlist" id="0">
+      <data key="d4">OPERATES_ON</data>
+    </edge>
+    <edge source="FUNC::DELETEWishlistId" target="ROLE::Delete" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="12">
+    <edge source="FUNC::PUTCart" target="ENTITY::Cart" id="0">
+      <data key="d4">OPERATES_ON</data>
+    </edge>
+    <edge source="FUNC::PUTCart" target="ROLE::Update" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="13">
+    <edge source="FUNC::DELETECartId" target="ENTITY::Cart" id="0">
+      <data key="d4">OPERATES_ON</data>
+    </edge>
+    <edge source="FUNC::DELETECartId" target="ROLE::Delete" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="14">
+    <edge source="FUNC::GetProducts" target="ENTITY::Product" id="0">
+      <data key="d4">OPERATES_ON</data>
+    </edge>
+    <edge source="FUNC::GetProducts" target="ROLE::Read" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="15">
+    <edge source="FUNC::POSTShoppingOrder" target="ENTITY::Order" id="0">
+      <data key="d4">OPERATES_ON</data>
+    </edge>
+    <edge source="FUNC::POSTShoppingOrder" target="ROLE::Create" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="16">
+    <edge source="FUNC::GETShoppingOrders" target="ENTITY::Order" id="0">
+      <data key="d4">OPERATES_ON</data>
+    </edge>
+    <edge source="FUNC::GETShoppingOrders" target="ROLE::Read" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="17">
-      <data key="d4">IMPLEMENTS</data>
+    <edge source="FUNC::GETShoppingCart" target="ENTITY::Cart" id="0">
+      <data key="d4">OPERATES_ON</data>
     </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="18">
-      <data key="d4">IMPLEMENTS</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="19">
-      <data key="d4">IMPLEMENTS</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="20">
-      <data key="d4">IMPLEMENTS</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="21">
-      <data key="d4">IMPLEMENTS</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="22">
-      <data key="d4">IMPLEMENTS</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="23">
-      <data key="d4">IMPLEMENTS</data>
-    </edge>
-    <edge source="FUNC::UnknownFunction" target="ROLE::UnknownRole" id="24">
+    <edge source="FUNC::GETShoppingCart" target="ROLE::Read" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
     <data key="d0">SemanticGraph</data>

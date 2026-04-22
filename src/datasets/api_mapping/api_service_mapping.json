@@ -2,61 +2,61 @@
   {
     "endpoint": "/customer/signup",
     "method": "POST",
-    "business_role": "Signup Creation Service",
+    "business_role": "Customer Create Service",
     "source_file": "api/customer.js"
   },
   {
     "endpoint": "/customer/login",
     "method": "POST",
-    "business_role": "Login Creation Service",
+    "business_role": "Auth Authenticate Service",
     "source_file": "api/customer.js"
   },
   {
     "endpoint": "/customer/address",
     "method": "POST",
-    "business_role": "Address Creation Service",
+    "business_role": "Customer Read Service",
     "source_file": "api/customer.js"
   },
   {
     "endpoint": "/customer/profile",
     "method": "GET",
-    "business_role": "Profile Query Service",
+    "business_role": "Customer Read Service",
     "source_file": "api/customer.js"
   },
   {
     "endpoint": "/customer/shoping-details",
     "method": "GET",
-    "business_role": "Details Query Service",
+    "business_role": "Customer Read Service",
     "source_file": "api/customer.js"
   },
   {
     "endpoint": "/customer/wishlist",
     "method": "GET",
-    "business_role": "Wishlist Query Service",
+    "business_role": "Wishlist Update Service",
     "source_file": "api/customer.js"
   },
   {
     "endpoint": "/product/create",
     "method": "POST",
-    "business_role": "Createproduct Creation Service",
+    "business_role": "Product Create Service",
     "source_file": "api/products.js"
   },
   {
     "endpoint": "/category/:type",
     "method": "GET",
-    "business_role": ":type Query Service",
+    "business_role": "Category Read Service",
     "source_file": "api/products.js"
   },
   {
     "endpoint": "/:id",
     "method": "GET",
-    "business_role": "Profile Query Service",
+    "business_role": "Order Read Service",
     "source_file": "api/products.js"
   },
   {
     "endpoint": "/ids",
     "method": "POST",
-    "business_role": "Details Query Service",
+    "business_role": "Wishlist Delete Service",
     "source_file": "api/products.js"
   },
   {
@@ -68,43 +68,43 @@
   {
     "endpoint": "/wishlist/:id",
     "method": "DELETE",
-    "business_role": "Wishlist Deletion Service",
+    "business_role": "Wishlist Delete Service",
     "source_file": "api/products.js"
   },
   {
     "endpoint": "/cart",
     "method": "PUT",
-    "business_role": "Cart Update Service",
+    "business_role": "Cart Read Service",
     "source_file": "api/products.js"
   },
   {
     "endpoint": "/cart/:id",
     "method": "DELETE",
-    "business_role": "Cart Deletion Service",
+    "business_role": "Cart Delete Service",
     "source_file": "api/products.js"
   },
   {
     "endpoint": "/",
     "method": "GET",
-    "business_role": "Getproducts Query Service",
+    "business_role": "Customer Read Service",
     "source_file": "api/products.js"
   },
   {
     "endpoint": "/shopping/order",
     "method": "POST",
-    "business_role": "Orders Query Service",
+    "business_role": "Order Create Service",
     "source_file": "api/shopping.js"
   },
   {
     "endpoint": "/shopping/orders",
     "method": "GET",
-    "business_role": "Orders Query Service",
+    "business_role": "Order Read Service",
     "source_file": "api/shopping.js"
   },
   {
     "endpoint": "/shopping/cart",
     "method": "GET",
-    "business_role": "Cart Query Service",
+    "business_role": "Cart Read Service",
     "source_file": "api/shopping.js"
   }
 ]

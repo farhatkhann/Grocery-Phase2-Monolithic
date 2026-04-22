@@ -1,42 +1,92 @@
 [
   {
     "function": "CreateProduct",
-    "cluster_id": "UnassignedService",
-    "business_role": "Unassigned"
+    "cluster_id": "ProductService",
+    "business_role": "Product Create Service"
+  },
+  {
+    "function": "DELETECartId",
+    "cluster_id": "CartService",
+    "business_role": "Cart Delete Service"
+  },
+  {
+    "function": "DELETEWishlistId",
+    "cluster_id": "WishlistService",
+    "business_role": "Wishlist Delete Service"
+  },
+  {
+    "function": "GETCustomerProfile",
+    "cluster_id": "CustomerService",
+    "business_role": "Customer Read Service"
+  },
+  {
+    "function": "GETCustomerShoppingdetails",
+    "cluster_id": "CustomerService",
+    "business_role": "Customer Read Service"
+  },
+  {
+    "function": "GETCustomerWishlist",
+    "cluster_id": "CustomerService",
+    "business_role": "Customer Read Service"
+  },
+  {
+    "function": "GETShoppingCart",
+    "cluster_id": "CartService",
+    "business_role": "Cart Read Service"
+  },
+  {
+    "function": "GETShoppingOrders",
+    "cluster_id": "OrderService",
+    "business_role": "Order Read Service"
   },
   {
     "function": "GetProductDescription",
-    "cluster_id": "UnassignedService",
-    "business_role": "Unassigned"
+    "cluster_id": "ProductService",
+    "business_role": "Product Read Service"
   },
   {
     "function": "GetProducts",
-    "cluster_id": "UnassignedService",
-    "business_role": "Unassigned"
+    "cluster_id": "ProductService",
+    "business_role": "Product Read Service"
   },
   {
     "function": "GetProductsByCategory",
-    "cluster_id": "UnassignedService",
-    "business_role": "Unassigned"
+    "cluster_id": "ProductService",
+    "business_role": "Category Read Service"
   },
   {
     "function": "GetSelectedProducts",
-    "cluster_id": "UnassignedService",
-    "business_role": "Unassigned"
+    "cluster_id": "ProductService",
+    "business_role": "Product Read Service"
+  },
+  {
+    "function": "POSTCustomerAddress",
+    "cluster_id": "CustomerService",
+    "business_role": "Customer Create Service"
+  },
+  {
+    "function": "POSTShoppingOrder",
+    "cluster_id": "OrderService",
+    "business_role": "Order Create Service"
+  },
+  {
+    "function": "PUTCart",
+    "cluster_id": "CartService",
+    "business_role": "Cart Update Service"
+  },
+  {
+    "function": "PUTWishlist",
+    "cluster_id": "WishlistService",
+    "business_role": "Wishlist Update Service"
   },
   {
     "function": "SignIn",
-    "cluster_id": "UnassignedService",
-    "business_role": "Unassigned"
+    "cluster_id": "AuthService",
+    "business_role": "Auth Authenticate Service"
   },
   {
     "function": "SignUp",
-    "cluster_id": "UnassignedService",
-    "business_role": "Unassigned"
-  },
-  {
-    "function": "UnknownFunction",
-    "cluster_id": "UnassignedService",
-    "business_role": "Unassigned"
+    "cluster_id": "AuthService",
+    "business_role": "Auth Create Service"
   }
 ]

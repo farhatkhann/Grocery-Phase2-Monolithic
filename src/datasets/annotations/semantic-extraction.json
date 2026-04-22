@@ -13,9 +13,9 @@
       "../services/customer-service",
       "./middlewares/auth"
     ],
-    "business_role": "Create Account",
+    "business_role": "Create",
     "domain_entity": "Customer",
-    "intent": "Create Account",
+    "intent": "Create",
     "http_method": "POST",
     "route": "/customer/signup",
     "source_file": "src\\api\\customer.js"
@@ -34,15 +34,15 @@
       "../services/customer-service",
       "./middlewares/auth"
     ],
-    "business_role": "Unknown",
+    "business_role": "Authenticate",
     "domain_entity": "Customer",
-    "intent": "Unknown",
+    "intent": "Authenticate",
     "http_method": "POST",
     "route": "/customer/login",
     "source_file": "src\\api\\customer.js"
   },
   {
-    "function": "UnknownFunction",
+    "function": "POSTCustomerAddress",
     "class": null,
     "signature": "()",
     "return_type": "void",
@@ -51,15 +51,15 @@
       "../services/customer-service",
       "./middlewares/auth"
     ],
-    "business_role": "Unknown",
+    "business_role": "Create",
     "domain_entity": "Customer",
-    "intent": "Unknown",
+    "intent": "Create",
     "http_method": "POST",
     "route": "/customer/address",
     "source_file": "src\\api\\customer.js"
   },
   {
-    "function": "UnknownFunction",
+    "function": "GETCustomerProfile",
     "class": null,
     "signature": "()",
     "return_type": "void",
@@ -68,15 +68,15 @@
       "../services/customer-service",
       "./middlewares/auth"
     ],
-    "business_role": "Unknown",
+    "business_role": "Read",
     "domain_entity": "Customer",
-    "intent": "Unknown",
+    "intent": "Read",
     "http_method": "GET",
     "route": "/customer/profile",
     "source_file": "src\\api\\customer.js"
   },
   {
-    "function": "UnknownFunction",
+    "function": "GETCustomerShoppingdetails",
     "class": null,
     "signature": "()",
     "return_type": "void",
@@ -85,15 +85,15 @@
       "../services/customer-service",
       "./middlewares/auth"
     ],
-    "business_role": "Unknown",
+    "business_role": "Read",
     "domain_entity": "Customer",
-    "intent": "Unknown",
+    "intent": "Read",
     "http_method": "GET",
     "route": "/customer/shoping-details",
     "source_file": "src\\api\\customer.js"
   },
   {
-    "function": "UnknownFunction",
+    "function": "GETCustomerWishlist",
     "class": null,
     "signature": "()",
     "return_type": "void",
@@ -102,9 +102,9 @@
       "../services/customer-service",
       "./middlewares/auth"
     ],
-    "business_role": "Unknown",
+    "business_role": "Read",
     "domain_entity": "Customer",
-    "intent": "Unknown",
+    "intent": "Read",
     "http_method": "GET",
     "route": "/customer/wishlist",
     "source_file": "src\\api\\customer.js"
@@ -147,9 +147,9 @@
       "../services/customer-service",
       "./middlewares/auth"
     ],
-    "business_role": "Fetch",
-    "domain_entity": "GenericEntity",
-    "intent": "Fetch",
+    "business_role": "Read",
+    "domain_entity": "Category",
+    "intent": "Read",
     "http_method": "GET",
     "route": "/category/:type",
     "source_file": "src\\api\\products.js"
@@ -170,9 +170,9 @@
       "../services/customer-service",
       "./middlewares/auth"
     ],
-    "business_role": "Fetch",
-    "domain_entity": "GenericEntity",
-    "intent": "Fetch",
+    "business_role": "Read",
+    "domain_entity": "Common",
+    "intent": "Read",
     "http_method": "GET",
     "route": "/:id",
     "source_file": "src\\api\\products.js"
@@ -193,15 +193,15 @@
       "../services/customer-service",
       "./middlewares/auth"
     ],
-    "business_role": "Fetch",
-    "domain_entity": "GenericEntity",
-    "intent": "Fetch",
+    "business_role": "Create",
+    "domain_entity": "Ids",
+    "intent": "Create",
     "http_method": "POST",
     "route": "/ids",
     "source_file": "src\\api\\products.js"
   },
   {
-    "function": "UnknownFunction",
+    "function": "PUTWishlist",
     "class": null,
     "signature": "()",
     "return_type": "void",
@@ -211,15 +211,15 @@
       "../services/customer-service",
       "./middlewares/auth"
     ],
-    "business_role": "Unknown",
+    "business_role": "Update",
     "domain_entity": "Wishlist",
-    "intent": "Unknown",
+    "intent": "Update",
     "http_method": "PUT",
     "route": "/wishlist",
     "source_file": "src\\api\\products.js"
   },
   {
-    "function": "UnknownFunction",
+    "function": "DELETEWishlistId",
     "class": null,
     "signature": "()",
     "return_type": "void",
@@ -229,15 +229,15 @@
       "../services/customer-service",
       "./middlewares/auth"
     ],
-    "business_role": "Unknown",
+    "business_role": "Delete",
     "domain_entity": "Wishlist",
-    "intent": "Unknown",
+    "intent": "Delete",
     "http_method": "DELETE",
     "route": "/wishlist/:id",
     "source_file": "src\\api\\products.js"
   },
   {
-    "function": "UnknownFunction",
+    "function": "PUTCart",
     "class": null,
     "signature": "()",
     "return_type": "void",
@@ -247,15 +247,15 @@
       "../services/customer-service",
       "./middlewares/auth"
     ],
-    "business_role": "Unknown",
+    "business_role": "Update",
     "domain_entity": "Cart",
-    "intent": "Unknown",
+    "intent": "Update",
     "http_method": "PUT",
     "route": "/cart",
     "source_file": "src\\api\\products.js"
   },
   {
-    "function": "UnknownFunction",
+    "function": "DELETECartId",
     "class": null,
     "signature": "()",
     "return_type": "void",
@@ -265,9 +265,9 @@
       "../services/customer-service",
       "./middlewares/auth"
     ],
-    "business_role": "Unknown",
+    "business_role": "Delete",
     "domain_entity": "Cart",
-    "intent": "Unknown",
+    "intent": "Delete",
     "http_method": "DELETE",
     "route": "/cart/:id",
     "source_file": "src\\api\\products.js"
@@ -288,15 +288,15 @@
       "../services/customer-service",
       "./middlewares/auth"
     ],
-    "business_role": "Fetch",
-    "domain_entity": "GenericEntity",
-    "intent": "Fetch",
+    "business_role": "Read",
+    "domain_entity": "Product",
+    "intent": "Read",
     "http_method": "GET",
     "route": "/",
     "source_file": "src\\api\\products.js"
   },
   {
-    "function": "UnknownFunction",
+    "function": "POSTShoppingOrder",
     "class": null,
     "signature": "()",
     "return_type": "void",
@@ -306,15 +306,15 @@
       "../services/customer-service",
       "./middlewares/auth"
     ],
-    "business_role": "Unknown",
+    "business_role": "Create",
     "domain_entity": "Order",
-    "intent": "Unknown",
+    "intent": "Create",
     "http_method": "POST",
     "route": "/shopping/order",
     "source_file": "src\\api\\shopping.js"
   },
   {
-    "function": "UnknownFunction",
+    "function": "GETShoppingOrders",
     "class": null,
     "signature": "()",
     "return_type": "void",
@@ -324,15 +324,15 @@
       "../services/customer-service",
       "./middlewares/auth"
     ],
-    "business_role": "Unknown",
+    "business_role": "Read",
     "domain_entity": "Order",
-    "intent": "Unknown",
+    "intent": "Read",
     "http_method": "GET",
     "route": "/shopping/orders",
     "source_file": "src\\api\\shopping.js"
   },
   {
-    "function": "UnknownFunction",
+    "function": "GETShoppingCart",
     "class": null,
     "signature": "()",
     "return_type": "void",
@@ -342,9 +342,9 @@
       "../services/customer-service",
       "./middlewares/auth"
     ],
-    "business_role": "Unknown",
+    "business_role": "Read",
     "domain_entity": "Cart",
-    "intent": "Unknown",
+    "intent": "Read",
     "http_method": "GET",
     "route": "/shopping/cart",
     "source_file": "src\\api\\shopping.js"

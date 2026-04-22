@@ -17,157 +17,157 @@ base:fn_CreateProduct_6 a base:Function ;
     base:route "/product/create"^^xsd:string ;
     base:sourceFile "src\\api\\products.js"^^xsd:string .
 
+base:fn_DELETECartId_13 a base:Function ;
+    rdfs:label "DELETECartId" ;
+    base:businessRole "Delete"^^xsd:string ;
+    base:httpMethod "DELETE"^^xsd:string ;
+    base:intent "Delete"^^xsd:string ;
+    base:relatesTo base:Cart ;
+    base:route "/cart/:id"^^xsd:string ;
+    base:sourceFile "src\\api\\products.js"^^xsd:string .
+
+base:fn_DELETEWishlistId_11 a base:Function ;
+    rdfs:label "DELETEWishlistId" ;
+    base:businessRole "Delete"^^xsd:string ;
+    base:httpMethod "DELETE"^^xsd:string ;
+    base:intent "Delete"^^xsd:string ;
+    base:relatesTo base:Wishlist ;
+    base:route "/wishlist/:id"^^xsd:string ;
+    base:sourceFile "src\\api\\products.js"^^xsd:string .
+
+base:fn_GETCustomerProfile_3 a base:Function ;
+    rdfs:label "GETCustomerProfile" ;
+    base:businessRole "Read"^^xsd:string ;
+    base:httpMethod "GET"^^xsd:string ;
+    base:intent "Read"^^xsd:string ;
+    base:relatesTo base:Customer ;
+    base:route "/customer/profile"^^xsd:string ;
+    base:sourceFile "src\\api\\customer.js"^^xsd:string .
+
+base:fn_GETCustomerShoppingdetails_4 a base:Function ;
+    rdfs:label "GETCustomerShoppingdetails" ;
+    base:businessRole "Read"^^xsd:string ;
+    base:httpMethod "GET"^^xsd:string ;
+    base:intent "Read"^^xsd:string ;
+    base:relatesTo base:Customer ;
+    base:route "/customer/shoping-details"^^xsd:string ;
+    base:sourceFile "src\\api\\customer.js"^^xsd:string .
+
+base:fn_GETCustomerWishlist_5 a base:Function ;
+    rdfs:label "GETCustomerWishlist" ;
+    base:businessRole "Read"^^xsd:string ;
+    base:httpMethod "GET"^^xsd:string ;
+    base:intent "Read"^^xsd:string ;
+    base:relatesTo base:Customer ;
+    base:route "/customer/wishlist"^^xsd:string ;
+    base:sourceFile "src\\api\\customer.js"^^xsd:string .
+
+base:fn_GETShoppingCart_17 a base:Function ;
+    rdfs:label "GETShoppingCart" ;
+    base:businessRole "Read"^^xsd:string ;
+    base:httpMethod "GET"^^xsd:string ;
+    base:intent "Read"^^xsd:string ;
+    base:relatesTo base:Cart ;
+    base:route "/shopping/cart"^^xsd:string ;
+    base:sourceFile "src\\api\\shopping.js"^^xsd:string .
+
+base:fn_GETShoppingOrders_16 a base:Function ;
+    rdfs:label "GETShoppingOrders" ;
+    base:businessRole "Read"^^xsd:string ;
+    base:httpMethod "GET"^^xsd:string ;
+    base:intent "Read"^^xsd:string ;
+    base:relatesTo base:Order ;
+    base:route "/shopping/orders"^^xsd:string ;
+    base:sourceFile "src\\api\\shopping.js"^^xsd:string .
+
 base:fn_GetProductDescription_8 a base:Function ;
     rdfs:label "GetProductDescription" ;
-    base:businessRole "Fetch"^^xsd:string ;
+    base:businessRole "Read"^^xsd:string ;
     base:httpMethod "GET"^^xsd:string ;
-    base:intent "Fetch"^^xsd:string ;
-    base:relatesTo base:GenericEntity ;
+    base:intent "Read"^^xsd:string ;
+    base:relatesTo base:Common ;
     base:route "/:id"^^xsd:string ;
     base:sourceFile "src\\api\\products.js"^^xsd:string .
 
 base:fn_GetProductsByCategory_7 a base:Function ;
     rdfs:label "GetProductsByCategory" ;
-    base:businessRole "Fetch"^^xsd:string ;
+    base:businessRole "Read"^^xsd:string ;
     base:httpMethod "GET"^^xsd:string ;
-    base:intent "Fetch"^^xsd:string ;
-    base:relatesTo base:GenericEntity ;
+    base:intent "Read"^^xsd:string ;
+    base:relatesTo base:Category ;
     base:route "/category/:type"^^xsd:string ;
     base:sourceFile "src\\api\\products.js"^^xsd:string .
 
 base:fn_GetProducts_14 a base:Function ;
     rdfs:label "GetProducts" ;
-    base:businessRole "Fetch"^^xsd:string ;
+    base:businessRole "Read"^^xsd:string ;
     base:httpMethod "GET"^^xsd:string ;
-    base:intent "Fetch"^^xsd:string ;
-    base:relatesTo base:GenericEntity ;
+    base:intent "Read"^^xsd:string ;
+    base:relatesTo base:Product ;
     base:route "/"^^xsd:string ;
     base:sourceFile "src\\api\\products.js"^^xsd:string .
 
 base:fn_GetSelectedProducts_9 a base:Function ;
     rdfs:label "GetSelectedProducts" ;
-    base:businessRole "Fetch"^^xsd:string ;
+    base:businessRole "Create"^^xsd:string ;
     base:httpMethod "POST"^^xsd:string ;
-    base:intent "Fetch"^^xsd:string ;
-    base:relatesTo base:GenericEntity ;
+    base:intent "Create"^^xsd:string ;
+    base:relatesTo base:Ids ;
     base:route "/ids"^^xsd:string ;
+    base:sourceFile "src\\api\\products.js"^^xsd:string .
+
+base:fn_POSTCustomerAddress_2 a base:Function ;
+    rdfs:label "POSTCustomerAddress" ;
+    base:businessRole "Create"^^xsd:string ;
+    base:httpMethod "POST"^^xsd:string ;
+    base:intent "Create"^^xsd:string ;
+    base:relatesTo base:Customer ;
+    base:route "/customer/address"^^xsd:string ;
+    base:sourceFile "src\\api\\customer.js"^^xsd:string .
+
+base:fn_POSTShoppingOrder_15 a base:Function ;
+    rdfs:label "POSTShoppingOrder" ;
+    base:businessRole "Create"^^xsd:string ;
+    base:httpMethod "POST"^^xsd:string ;
+    base:intent "Create"^^xsd:string ;
+    base:relatesTo base:Order ;
+    base:route "/shopping/order"^^xsd:string ;
+    base:sourceFile "src\\api\\shopping.js"^^xsd:string .
+
+base:fn_PUTCart_12 a base:Function ;
+    rdfs:label "PUTCart" ;
+    base:businessRole "Update"^^xsd:string ;
+    base:httpMethod "PUT"^^xsd:string ;
+    base:intent "Update"^^xsd:string ;
+    base:relatesTo base:Cart ;
+    base:route "/cart"^^xsd:string ;
+    base:sourceFile "src\\api\\products.js"^^xsd:string .
+
+base:fn_PUTWishlist_10 a base:Function ;
+    rdfs:label "PUTWishlist" ;
+    base:businessRole "Update"^^xsd:string ;
+    base:httpMethod "PUT"^^xsd:string ;
+    base:intent "Update"^^xsd:string ;
+    base:relatesTo base:Wishlist ;
+    base:route "/wishlist"^^xsd:string ;
     base:sourceFile "src\\api\\products.js"^^xsd:string .
 
 base:fn_SignIn_1 a base:Function ;
     rdfs:label "SignIn" ;
-    base:businessRole "Unknown"^^xsd:string ;
+    base:businessRole "Authenticate"^^xsd:string ;
     base:httpMethod "POST"^^xsd:string ;
-    base:intent "Unknown"^^xsd:string ;
+    base:intent "Authenticate"^^xsd:string ;
     base:relatesTo base:Customer ;
     base:route "/customer/login"^^xsd:string ;
     base:sourceFile "src\\api\\customer.js"^^xsd:string .
 
 base:fn_SignUp_0 a base:Function ;
     rdfs:label "SignUp" ;
-    base:businessRole "Create Account"^^xsd:string ;
+    base:businessRole "Create"^^xsd:string ;
     base:httpMethod "POST"^^xsd:string ;
-    base:intent "Create Account"^^xsd:string ;
+    base:intent "Create"^^xsd:string ;
     base:relatesTo base:Customer ;
     base:route "/customer/signup"^^xsd:string ;
-    base:sourceFile "src\\api\\customer.js"^^xsd:string .
-
-base:fn_UnknownFunction_10 a base:Function ;
-    rdfs:label "UnknownFunction" ;
-    base:businessRole "Unknown"^^xsd:string ;
-    base:httpMethod "PUT"^^xsd:string ;
-    base:intent "Unknown"^^xsd:string ;
-    base:relatesTo base:Wishlist ;
-    base:route "/wishlist"^^xsd:string ;
-    base:sourceFile "src\\api\\products.js"^^xsd:string .
-
-base:fn_UnknownFunction_11 a base:Function ;
-    rdfs:label "UnknownFunction" ;
-    base:businessRole "Unknown"^^xsd:string ;
-    base:httpMethod "DELETE"^^xsd:string ;
-    base:intent "Unknown"^^xsd:string ;
-    base:relatesTo base:Wishlist ;
-    base:route "/wishlist/:id"^^xsd:string ;
-    base:sourceFile "src\\api\\products.js"^^xsd:string .
-
-base:fn_UnknownFunction_12 a base:Function ;
-    rdfs:label "UnknownFunction" ;
-    base:businessRole "Unknown"^^xsd:string ;
-    base:httpMethod "PUT"^^xsd:string ;
-    base:intent "Unknown"^^xsd:string ;
-    base:relatesTo base:Cart ;
-    base:route "/cart"^^xsd:string ;
-    base:sourceFile "src\\api\\products.js"^^xsd:string .
-
-base:fn_UnknownFunction_13 a base:Function ;
-    rdfs:label "UnknownFunction" ;
-    base:businessRole "Unknown"^^xsd:string ;
-    base:httpMethod "DELETE"^^xsd:string ;
-    base:intent "Unknown"^^xsd:string ;
-    base:relatesTo base:Cart ;
-    base:route "/cart/:id"^^xsd:string ;
-    base:sourceFile "src\\api\\products.js"^^xsd:string .
-
-base:fn_UnknownFunction_15 a base:Function ;
-    rdfs:label "UnknownFunction" ;
-    base:businessRole "Unknown"^^xsd:string ;
-    base:httpMethod "POST"^^xsd:string ;
-    base:intent "Unknown"^^xsd:string ;
-    base:relatesTo base:Order ;
-    base:route "/shopping/order"^^xsd:string ;
-    base:sourceFile "src\\api\\shopping.js"^^xsd:string .
-
-base:fn_UnknownFunction_16 a base:Function ;
-    rdfs:label "UnknownFunction" ;
-    base:businessRole "Unknown"^^xsd:string ;
-    base:httpMethod "GET"^^xsd:string ;
-    base:intent "Unknown"^^xsd:string ;
-    base:relatesTo base:Order ;
-    base:route "/shopping/orders"^^xsd:string ;
-    base:sourceFile "src\\api\\shopping.js"^^xsd:string .
-
-base:fn_UnknownFunction_17 a base:Function ;
-    rdfs:label "UnknownFunction" ;
-    base:businessRole "Unknown"^^xsd:string ;
-    base:httpMethod "GET"^^xsd:string ;
-    base:intent "Unknown"^^xsd:string ;
-    base:relatesTo base:Cart ;
-    base:route "/shopping/cart"^^xsd:string ;
-    base:sourceFile "src\\api\\shopping.js"^^xsd:string .
-
-base:fn_UnknownFunction_2 a base:Function ;
-    rdfs:label "UnknownFunction" ;
-    base:businessRole "Unknown"^^xsd:string ;
-    base:httpMethod "POST"^^xsd:string ;
-    base:intent "Unknown"^^xsd:string ;
-    base:relatesTo base:Customer ;
-    base:route "/customer/address"^^xsd:string ;
-    base:sourceFile "src\\api\\customer.js"^^xsd:string .
-
-base:fn_UnknownFunction_3 a base:Function ;
-    rdfs:label "UnknownFunction" ;
-    base:businessRole "Unknown"^^xsd:string ;
-    base:httpMethod "GET"^^xsd:string ;
-    base:intent "Unknown"^^xsd:string ;
-    base:relatesTo base:Customer ;
-    base:route "/customer/profile"^^xsd:string ;
-    base:sourceFile "src\\api\\customer.js"^^xsd:string .
-
-base:fn_UnknownFunction_4 a base:Function ;
-    rdfs:label "UnknownFunction" ;
-    base:businessRole "Unknown"^^xsd:string ;
-    base:httpMethod "GET"^^xsd:string ;
-    base:intent "Unknown"^^xsd:string ;
-    base:relatesTo base:Customer ;
-    base:route "/customer/shoping-details"^^xsd:string ;
-    base:sourceFile "src\\api\\customer.js"^^xsd:string .
-
-base:fn_UnknownFunction_5 a base:Function ;
-    rdfs:label "UnknownFunction" ;
-    base:businessRole "Unknown"^^xsd:string ;
-    base:httpMethod "GET"^^xsd:string ;
-    base:intent "Unknown"^^xsd:string ;
-    base:relatesTo base:Customer ;
-    base:route "/customer/wishlist"^^xsd:string ;
     base:sourceFile "src\\api\\customer.js"^^xsd:string .
 
 base:httpMethod a owl:DatatypeProperty ;
@@ -195,20 +195,26 @@ base:sourceFile a owl:DatatypeProperty ;
     rdfs:domain base:Function ;
     rdfs:range xsd:string .
 
-base:Product a owl:Class ;
-    rdfs:label "Product" .
+base:Category a owl:Class ;
+    rdfs:label "Category" .
+
+base:Common a owl:Class ;
+    rdfs:label "Common" .
+
+base:Ids a owl:Class ;
+    rdfs:label "Ids" .
 
 base:Order a owl:Class ;
     rdfs:label "Order" .
+
+base:Product a owl:Class ;
+    rdfs:label "Product" .
 
 base:Wishlist a owl:Class ;
     rdfs:label "Wishlist" .
 
 base:Cart a owl:Class ;
     rdfs:label "Cart" .
-
-base:GenericEntity a owl:Class ;
-    rdfs:label "GenericEntity" .
 
 base:Customer a owl:Class ;
     rdfs:label "Customer" .

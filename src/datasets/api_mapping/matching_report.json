@@ -1,92 +1,92 @@
 [
   {
     "endpoint": "POST /customer/signup",
-    "matched_function": "",
-    "similarity_score": 0.595
+    "matched_function": "POSTCustomerAddress",
+    "similarity_score": 0.393
   },
   {
     "endpoint": "POST /customer/login",
-    "matched_function": "",
-    "similarity_score": 0.525
+    "matched_function": "SignIn",
+    "similarity_score": 0.349
   },
   {
     "endpoint": "POST /customer/address",
-    "matched_function": "",
-    "similarity_score": 0.446
+    "matched_function": "GETCustomerProfile",
+    "similarity_score": 0.387
   },
   {
     "endpoint": "GET /customer/profile",
-    "matched_function": "",
-    "similarity_score": 0.699
+    "matched_function": "GETCustomerProfile",
+    "similarity_score": 0.43
   },
   {
     "endpoint": "GET /customer/shoping-details",
-    "matched_function": "",
-    "similarity_score": 0.503
+    "matched_function": "GETCustomerProfile",
+    "similarity_score": 0.494
   },
   {
     "endpoint": "GET /customer/wishlist",
-    "matched_function": "",
-    "similarity_score": 0.755
+    "matched_function": "PUTWishlist",
+    "similarity_score": 0.635
   },
   {
     "endpoint": "POST /product/create",
     "matched_function": "CreateProduct",
-    "similarity_score": 0.525
+    "similarity_score": 0.668
   },
   {
     "endpoint": "GET /category/:type",
-    "matched_function": "",
-    "similarity_score": 0.444
+    "matched_function": "GetProductsByCategory",
+    "similarity_score": 0.407
   },
   {
     "endpoint": "GET /:id",
-    "matched_function": "",
-    "similarity_score": 0.287
+    "matched_function": "GETShoppingOrders",
+    "similarity_score": 0.122
   },
   {
     "endpoint": "POST /ids",
-    "matched_function": "",
-    "similarity_score": 0.217
+    "matched_function": "DELETEWishlistId",
+    "similarity_score": 0.117
   },
   {
     "endpoint": "PUT /wishlist",
-    "matched_function": "",
+    "matched_function": "PUTWishlist",
     "similarity_score": 0.675
   },
   {
     "endpoint": "DELETE /wishlist/:id",
-    "matched_function": "",
-    "similarity_score": 0.796
+    "matched_function": "DELETEWishlistId",
+    "similarity_score": 0.783
   },
   {
     "endpoint": "PUT /cart",
-    "matched_function": "",
-    "similarity_score": 0.434
+    "matched_function": "GETShoppingCart",
+    "similarity_score": 0.439
   },
   {
     "endpoint": "DELETE /cart/:id",
-    "matched_function": "",
-    "similarity_score": 0.651
+    "matched_function": "DELETECartId",
+    "similarity_score": 0.656
   },
   {
     "endpoint": "GET /",
-    "matched_function": "GetProducts",
-    "similarity_score": 0.259
+    "matched_function": "GETCustomerProfile",
+    "similarity_score": 0.161
   },
   {
     "endpoint": "POST /shopping/order",
-    "matched_function": "",
-    "similarity_score": 0.401
+    "matched_function": "POSTShoppingOrder",
+    "similarity_score": 0.358
   },
   {
     "endpoint": "GET /shopping/orders",
-    "matched_function": "",
-    "similarity_score": 0.598
+    "matched_function": "GETShoppingOrders",
+    "similarity_score": 0.44
   },
   {
     "endpoint": "GET /shopping/cart",
-    "matched_function": "",
-    "similarity_score": 0.561
+    "matched_function": "GETShoppingCart",
+    "similarity_score": 0.518
   }
 ]

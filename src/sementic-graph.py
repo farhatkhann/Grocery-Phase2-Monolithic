@@ -5,7 +5,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 DATASETS_DIR = BASE_DIR / "datasets"
 
-INPUT = DATASETS_DIR / "annotations" / "api-sementics.json"
+INPUT = DATASETS_DIR / "annotations" / "semantic-extraction.json"
 OUT_DIR = DATASETS_DIR / "graphs"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
