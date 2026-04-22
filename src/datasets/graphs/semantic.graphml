@@ -178,11 +178,17 @@
     <edge source="FUNC::GETCustomerShoppingdetails" target="ROLE::Read" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
+    <edge source="FUNC::GETCustomerShoppingdetails" target="FUNC::GETShoppingOrders" id="0">
+      <data key="d4">CALLS</data>
+    </edge>
     <edge source="FUNC::GETCustomerWishlist" target="ENTITY::Customer" id="0">
       <data key="d4">OPERATES_ON</data>
     </edge>
     <edge source="FUNC::GETCustomerWishlist" target="ROLE::Read" id="0">
       <data key="d4">IMPLEMENTS</data>
+    </edge>
+    <edge source="FUNC::GETCustomerWishlist" target="FUNC::GETShoppingOrders" id="0">
+      <data key="d4">CALLS</data>
     </edge>
     <edge source="FUNC::CreateProduct" target="ENTITY::Product" id="0">
       <data key="d4">OPERATES_ON</data>
@@ -244,6 +250,12 @@
     <edge source="FUNC::POSTShoppingOrder" target="ROLE::Create" id="0">
       <data key="d4">IMPLEMENTS</data>
     </edge>
+    <edge source="FUNC::POSTShoppingOrder" target="FUNC::GETShoppingCart" id="0">
+      <data key="d4">CALLS</data>
+    </edge>
+    <edge source="FUNC::POSTShoppingOrder" target="FUNC::GetProducts" id="0">
+      <data key="d4">CALLS</data>
+    </edge>
     <edge source="FUNC::GETShoppingOrders" target="ENTITY::Order" id="0">
       <data key="d4">OPERATES_ON</data>
     </edge>
@@ -255,6 +267,9 @@
     </edge>
     <edge source="FUNC::GETShoppingCart" target="ROLE::Read" id="0">
       <data key="d4">IMPLEMENTS</data>
+    </edge>
+    <edge source="FUNC::GETShoppingCart" target="FUNC::GetProducts" id="0">
+      <data key="d4">CALLS</data>
     </edge>
     <data key="d0">SemanticGraph</data>
   </graph>

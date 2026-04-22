@@ -1,52 +1,51 @@
 {
-  "CustomerService": {
-    "Ca": 0,
-    "Ce": 2,
-    "Instability": 1.0,
-    "Cohesion": 0.129,
-    "Depends_On": [
-      "OrderService",
-      "WishlistService"
-    ]
-  },
   "ProductService": {
     "Ca": 2,
     "Ce": 0,
     "Instability": 0.0,
-    "Cohesion": 0.161,
-    "Depends_On": []
-  },
-  "CartService": {
-    "Ca": 1,
-    "Ce": 1,
-    "Instability": 0.5,
-    "Cohesion": 0.097,
-    "Depends_On": [
-      "ProductService"
-    ]
-  },
-  "WishlistService": {
-    "Ca": 1,
-    "Ce": 0,
-    "Instability": 0.0,
-    "Cohesion": 0.065,
+    "Cohesion": 1.0,
     "Depends_On": []
   },
   "OrderService": {
     "Ca": 1,
     "Ce": 2,
     "Instability": 0.667,
-    "Cohesion": 0.065,
+    "Cohesion": 0.4,
     "Depends_On": [
       "ProductService",
       "CartService"
+    ]
+  },
+  "CustomerService": {
+    "Ca": 0,
+    "Ce": 1,
+    "Instability": 1.0,
+    "Cohesion": 0.8,
+    "Depends_On": [
+      "OrderService"
     ]
   },
   "AuthService": {
     "Ca": 0,
     "Ce": 0,
     "Instability": 0,
-    "Cohesion": 0.065,
+    "Cohesion": 0.4,
+    "Depends_On": []
+  },
+  "CartService": {
+    "Ca": 1,
+    "Ce": 1,
+    "Instability": 0.5,
+    "Cohesion": 0.6,
+    "Depends_On": [
+      "ProductService"
+    ]
+  },
+  "WishlistService": {
+    "Ca": 0,
+    "Ce": 0,
+    "Instability": 0,
+    "Cohesion": 0.4,
     "Depends_On": []
   }
 }

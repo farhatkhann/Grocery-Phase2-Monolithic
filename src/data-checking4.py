@@ -47,54 +47,29 @@ services = set(service_funcs.keys())
 print(f"[INFO] Total services: {len(services)}")
 
 # ==============================
-# DEBUG: CHECK NAME MISMATCH
+# BUILD SERVICE GRAPH (CORRECT)
 # ==============================
-print("\n[DEBUG] Sample graph nodes:")
-print(list(G.nodes())[:10])
-
-print("\n[DEBUG] Sample clustered functions:")
-print(list(func_to_service.keys())[:10])
-
-# ==============================
-# HELPER: CLEAN FUNCTION NAME
-# ==============================
-def clean_name(name):
-    return name.split(".")[-1]
-
-# ==============================
-# BUILD SERVICE GRAPH
-# ==============================
-print("[INFO] Building service dependency graph...")
+print("[INFO] Building service dependency graph (CALLS only)...")
 
 service_edges = defaultdict(set)
 
-for u, v in G.edges():
-    u_clean = clean_name(u)
-    v_clean = clean_name(v)
+for u, v, data in G.edges(data=True):
 
-    if u_clean in func_to_service and v_clean in func_to_service:
-        s1 = func_to_service[u_clean]
-        s2 = func_to_service[v_clean]
+    # ✅ ONLY consider CALL relationships
+    if data.get("relation") != "CALLS":
+        continue
 
-        if s1 != s2:
-            service_edges[s1].add(s2)
+    # ✅ extract function names
+    if u.startswith("FUNC::") and v.startswith("FUNC::"):
+        f1 = u.replace("FUNC::", "")
+        f2 = v.replace("FUNC::", "")
 
-# ==============================
-# FALLBACK DEPENDENCIES (IMPORTANT)
-# ==============================
-print("[INFO] Applying fallback dependency rules...")
+        if f1 in func_to_service and f2 in func_to_service:
+            s1 = func_to_service[f1]
+            s2 = func_to_service[f2]
 
-FALLBACK = {
-    "OrderService": ["CartService", "ProductService"],
-    "CartService": ["ProductService"],
-    "CustomerService": ["OrderService", "WishlistService"],
-}
-
-for s, deps in FALLBACK.items():
-    if s in services:
-        for d in deps:
-            if d in services:
-                service_edges[s].add(d)
+            if s1 != s2:
+                service_edges[s1].add(s2)
 
 # ==============================
 # DEBUG: PRINT SERVICE EDGES
@@ -127,13 +102,11 @@ for s in services:
     instability[s] = Ce[s] / total if total > 0 else 0
 
 # ==============================
-# COMPUTE COHESION (IMPROVED)
+# COMPUTE COHESION (BETTER LOGIC)
 # ==============================
 print("[INFO] Computing Cohesion...")
 
 cohesion = {}
-
-total_nodes = len(G.nodes())
 
 for s in services:
     funcs = service_funcs.get(s, [])
@@ -142,7 +115,7 @@ for s in services:
     if n <= 1:
         cohesion[s] = 1.0
     else:
-        cohesion[s] = round(n / total_nodes, 3)
+        cohesion[s] = min(1.0, n / 5)
 
 # ==============================
 # SAVE OUTPUT
